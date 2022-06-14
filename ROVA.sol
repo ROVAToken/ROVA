@@ -4,7 +4,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
 contract ROVATOKEN is ERC20, Ownable {
-    constructor(uint256 initialSupply) ERC20("ROVA2", "ROVA2") {
+    constructor(uint256 initialSupply) ERC20("ROVA", "ROVA") {
         _mint(msg.sender, initialSupply*(10**uint256(decimals())));
     }
 

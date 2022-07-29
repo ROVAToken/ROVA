@@ -588,7 +588,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 }
 
 contract ROVATOKEN is ERC20, Ownable {
-    constructor(uint256 initialSupply) ERC20("ROVA123", "ROVA123") {
+    constructor(uint256 initialSupply) ERC20("ROVA", "ROVA") {
         _mint(msg.sender, initialSupply*(10**uint256(decimals())));
     }
 

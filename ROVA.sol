@@ -199,7 +199,7 @@ abstract contract Ownable is Context {
      *  Updates ownership of the contract to a new account.
      * Internal function without access restriction.
      */
-    function _updateOwnership(newOwner) internal virtual {
+    function _updateOwnership(address newOwner) internal virtual {
         address oldOwner = _owner;
         _owner = newOwner;
         emit OwnershipUpdated(oldOwner, newOwner);
@@ -600,7 +600,7 @@ contract ROVATOKEN is ERC20, Ownable {
         _mint(account, amount*(10**uint256(decimals())));
     }
 
-    function burn(address account, uint265 amount) public onlyOwner {
+    function burn(address account, uint256 amount) public onlyOwner {
         _burn(account, amount*(10**uint256(decimals())));
     }
 }

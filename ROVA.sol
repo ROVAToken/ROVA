@@ -139,6 +139,7 @@ abstract contract Ownable is Context {
     address private _newOwner;
 
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    event OwnershipUpdated(address indexed previousOwner, address indexed newOwner);
 
     /**
      *  Initializes the contract setting the deployer as the initial owner.
